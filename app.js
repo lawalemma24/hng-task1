@@ -5,13 +5,14 @@ const profileRoutes = require('./route/profileRoute');
 
 require('dotenv').config();
 
-// PORT = process.env.PORT || 7000;
+PORT = process.env.PORT || 7000;
 
 const app = express();
 
 app.use(cors({
   origin: '*'
 }));
+
 
 app.use(express.json());
 
